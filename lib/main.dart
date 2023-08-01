@@ -80,7 +80,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
           Expanded(
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.all(12),
+              padding: EdgeInsets.all(20),
               color: Colors.blueGrey,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -90,7 +90,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                     style: TextStyle(fontSize: 45, color: Colors.white),),
 
                   SizedBox(
-                    height: 20,
+                    height: 18,
                   ),
 
                   Text(output, style: TextStyle(
@@ -160,20 +160,20 @@ class _CalculatorAppState extends State<CalculatorApp> {
   }) {
     return Expanded(
         child: Container(
-          margin: EdgeInsets.all(8),
+          margin: EdgeInsets.all(10),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
                 backgroundColor: buttonBgColor,
                 padding: EdgeInsets.all(20),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(38),
+                  borderRadius: BorderRadius.circular(40),
                 )
             ),
             onPressed: () => onButtonClick(text),
 
 
             child: Text(text, style: TextStyle(
-                color: tColor, fontSize: 17, fontWeight: FontWeight.bold),),
+                color: tColor, fontSize: 18, fontWeight: FontWeight.bold),),
           ),
         )
     );
